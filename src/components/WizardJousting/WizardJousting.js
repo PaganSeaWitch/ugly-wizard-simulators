@@ -76,7 +76,7 @@ const WizardJousting = () => {
           playerOneHealth -= harm
         }
         else{
-          const harm = Math.max(jouster1.strength - Math.floor(jouster2.strength /2), 1)
+          const harm = Math.max(jouster2.strength - Math.floor(jouster1.strength /2), 1)
           matchVal += jouster2.name + " delievers a glancing blow!\n"
           playerOneHealth -= harm
         }
