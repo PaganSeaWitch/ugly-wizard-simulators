@@ -39,7 +39,7 @@ const WizardJousting = () => {
       const playerOneisLucky =  jouster1.luck > (Math.floor(Math.random() * 10) + 1); 
       const playerTwoisLucky = jouster2.luck > (Math.floor(Math.random() * 10) + 1);
 
-      matchVal += "They ready their brooms and thier lances...\n"
+      matchVal += "They ready their brooms and their lances...\n"
       if(playerOneisLucky){
         matchVal += jouster1.name + " has a mad gleam in their eye.\n"
       }
@@ -57,12 +57,12 @@ const WizardJousting = () => {
         const howHard = hit - defence
         if(howHard > 4){
           const harm = jouster1.strength * 2 - Math.floor(jouster2.strength /2)
-          matchVal += jouster1.name + " delievers a crushing blow!\n"
+          matchVal += jouster1.name + " delivers a crushing blow!\n"
           playerTwoHealth -= harm
         }
         else{
           const harm = Math.max(jouster1.strength - Math.floor(jouster2.strength /2), 1)
-          matchVal += jouster1.name + " delievers a glancing blow!\n"
+          matchVal += jouster1.name + " delivers a glancing blow!\n"
           playerTwoHealth -= harm
         }
       }
@@ -75,18 +75,18 @@ const WizardJousting = () => {
         if(howHard > 3){
           const harm = jouster2.strength * 2 - Math.floor(jouster1.strength /2)
           console.log(harm)
-          matchVal += jouster2.name + " delievers a crushing blow!\n"
+          matchVal += jouster2.name + " delivers a crushing blow!\n"
           playerOneHealth -= harm
         }
         else{
           const harm = Math.max(jouster2.strength - Math.floor(jouster1.strength /2), 1)
           console.log(harm)
-          matchVal += jouster2.name + " delievers a glancing blow!\n"
+          matchVal += jouster2.name + " delivers a glancing blow!\n"
           playerOneHealth -= harm
         }
       }
       if(!didPlayerOneHit && !didPlayerTwoHit){
-        matchVal += "Both contestents miss!\n"
+        matchVal += "Both contestants miss!\n"
       }
       if(playerOneHealth > 0 && playerTwoHealth > 0){
         if(playerOneHealth > 7){
