@@ -55,7 +55,7 @@ const WizardJousting = () => {
         const hit = (Math.floor(Math.random() * jouster1.dexterity) + 1) + playerOneisLucky == true ? 2 : 0
         const defence = (Math.floor(Math.random() * jouster2.dexterity) + 1) + playerTwoisLucky == true ? 2 : 0
         const howHard = hit - defence
-        if(howHard > 5){
+        if(howHard > 3){
           const harm = jouster1.strength * 2 - Math.floor(jouster2.strength /2)
           matchVal += jouster1.name + " delievers a crushing blow!\n"
           playerTwoHealth -= harm
@@ -70,14 +70,14 @@ const WizardJousting = () => {
         const hit = (Math.floor(Math.random() * jouster2.dexterity) + 1) + playerTwoisLucky == true ? 2 : 0
         const defence = (Math.floor(Math.random() * jouster1.dexterity) + 1) + playerOneisLucky == true ? 2 : 0
         const howHard = hit - defence
-        if(howHard > 5){
+        if(howHard > 3){
           const harm = jouster2.strength * 2 - Math.floor(jouster1.strength /2)
           matchVal += jouster2.name + " delievers a crushing blow!\n"
           playerOneHealth -= harm
         }
         else{
           const harm = Math.max(jouster1.strength - Math.floor(jouster2.strength /2), 1)
-          matchVal += jouster1.name + " delievers a glancing blow!\n"
+          matchVal += jouster2.name + " delievers a glancing blow!\n"
           playerOneHealth -= harm
         }
       }
