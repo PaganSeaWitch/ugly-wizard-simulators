@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import WizardJousting from './components/WizardJousting/WizardJousting';
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Routes>
       <Route
         element={<WizardJousting/>}
-        path="wizard-stuff/jousting"
+        path="/jousting"
         
       />
       </Routes>

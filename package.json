@@ -1,7 +1,7 @@
 {
   "name": "wizard-jousting",
   "version": "0.1.0",
-  "homepage": "https://PaganSeaWitch.github.io/wizard-stuff",
+  "homepage": "https://PaganSeaWitch.github.io/ugly-wizard-simulators",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
