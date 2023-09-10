@@ -8,7 +8,7 @@ function App() {
       <Routes>
       <Route
         element={<WizardJousting/>}
-        path="jousting"
+        path="wizard-stuff/jousting"
         
       />
       </Routes>
